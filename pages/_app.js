@@ -4,7 +4,7 @@ import '@code4ro/taskforce-fe-components/dist/index.css'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import * as gtag from '../utils/gtag'
-
+import GoogleAnalytics from '../components/google-analytics/google-analytics'
 import './../styles/index.scss'
 import roGeoJson from './../config/roGeo.json'
 
@@ -73,6 +73,7 @@ function MyApp({ Component, pageProps }) {
           content="Datelazi.ro prezintă infografii actualizate periodic cu datele furnizate de autoritățile competente."
         />
       </Head>
+      <GoogleAnalytics />
       <Component {...pageProps} />
     </>
   )
